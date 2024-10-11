@@ -1,9 +1,61 @@
+@font-face {
+    font-family: inter;
+    src: url(Inter.ttf);
+}
+
+body{
+    margin: auto 20px;
+    font-family: inter;
+}
+
 header{
     border-bottom: 1px solid grey;
-    height: 100px;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+#headerleft{
+    display: flex;
+    gap: 30px;
 }
 
 #barky{
-    height: 80px;
     width: 100px;
+}
+
+nav{
+    display: flex;
+    gap: 20px;
+}
+
+#headerright{
+    display: flex;
+}
+
+#headerright a{
+    border-right: 1px solid gray;
+    padding: 1px 20px;
+}
+
+#headerright #login{
+    border-right: none;
+}
+
+#headerright #freebarky{
+    border-right: none;
+    border-radius: 5px;
+    color: white;
+    background-color: black;
+    padding: 7px 15px;
+}
+
+#container{
+    max-width: 1000px;
 }
