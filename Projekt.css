@@ -1,0 +1,9 @@
+header{
+    border-bottom: 1px solid grey;
+    height: 100px;
+}
+
+#barky{
+    height: 80px;
+    width: 100px;
+}
