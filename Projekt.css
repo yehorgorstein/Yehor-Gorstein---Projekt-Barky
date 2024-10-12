@@ -8,8 +8,12 @@ body{
     font-family: inter;
 }
 
+p{
+    line-height: 1.5;
+}
+
 header{
-    border-bottom: 1px solid grey;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     height: 60px;
     display: flex;
     justify-content: space-between;
@@ -40,7 +44,7 @@ nav{
 }
 
 #headerright a{
-    border-right: 1px solid gray;
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
     padding: 1px 20px;
 }
 
@@ -48,7 +52,7 @@ nav{
     border-right: none;
 }
 
-#headerright #freebarky{
+#subscription a{
     border-right: none;
     border-radius: 5px;
     color: white;
@@ -58,4 +62,40 @@ nav{
 
 #container{
     max-width: 1000px;
+    margin: 0 auto;
+}
+
+#start{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    padding: 80px 0;
+}
+
+#start h2{
+    font-size: 50px;
+    margin-bottom: 0;
+}
+
+#start p{
+    color: grey;
+    margin: 10px 0 25px 0;
+}
+
+#start img{
+    max-width: 500px;
+}
+
+#companies{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 35px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 30px;
+}
+
+#companies img{
+    max-height: 23px;
 }
