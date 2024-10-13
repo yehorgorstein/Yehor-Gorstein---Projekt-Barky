@@ -12,6 +12,8 @@ p{
     line-height: 1.5;
 }
 
+/*HEADER*/
+
 header{
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     height: 60px;
@@ -60,16 +62,20 @@ nav{
     padding: 7px 15px;
 }
 
+/*CONTAINER*/
+
 #container{
     max-width: 1000px;
     margin: 0 auto;
 }
 
+/*START*/
+
 #start{
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 80px;
-    padding: 80px 0;
+    padding: 70px 0;
 }
 
 #start h2{
@@ -86,6 +92,8 @@ nav{
     max-width: 500px;
 }
 
+/*COMPANIES*/
+
 #companies{
     display: flex;
     flex-wrap: wrap;
@@ -98,4 +106,19 @@ nav{
 
 #companies img{
     max-height: 23px;
+}
+
+/*MAIN*/
+
+main{
+    padding: 70px 0;
+}
+
+main img{
+    max-width: 100%;
+    box-shadow: 0 0px 40px 5px rgba(0, 0, 0, 0.1);
+}
+
+main h2{
+    font-size: 40px;
 }
