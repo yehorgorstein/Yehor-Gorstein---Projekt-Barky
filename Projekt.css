@@ -21,8 +21,10 @@ header{
     justify-content: space-between;
     align-items: center;
     position: fixed;
-    margin: auto 10px;
-    width: 97vw;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto 20px;
     z-index: 100;
     background-color: white;
 }
@@ -35,10 +37,15 @@ a{
 #headerleft{
     display: flex;
     gap: 30px;
+    align-items: center;
+}
+
+#headerleft img{
+    margin-left: 2px;
 }
 
 #barky{
-    width: 100px;
+    width: 110px;
 }
 
 nav{
