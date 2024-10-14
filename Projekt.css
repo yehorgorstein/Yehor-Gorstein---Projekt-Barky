@@ -184,7 +184,8 @@ main h2{
 
 #freeplan{
     border-top: 1px solid rgba(0, 0, 0, 0.1);
-    padding: 100px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 100px 100px 0;
 }
 
 #freeplandescription{
@@ -231,3 +232,40 @@ li img{
 }
 
 /*INFORMATION*/
+
+#information{
+    text-align: center;
+    margin: 80px 0 80px;
+}
+#information h2{
+    font-size: 37px;
+    margin: 0;
+}
+
+#information p{
+    color: gray;
+    margin: 5px 0 40px;
+}
+
+#categories{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#categories a{
+    text-decoration: underline;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+#categories h3{
+    margin: 0;
+}
+
+.category{
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0 25px;
+}
+
+#lastcategory{
+    border-right: none;
+}
