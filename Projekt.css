@@ -12,26 +12,28 @@ p{
     line-height: 1.5;
 }
 
+a{
+    text-decoration: none;
+    color: black;
+}
+
 /*HEADER*/
 
 header{
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     height: 60px;
+    margin: auto 20px;
+    z-index: 100;
+    background-color: white;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
+
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    margin: auto 20px;
-    z-index: 100;
-    background-color: white;
-}
-
-a{
-    text-decoration: none;
-    color: black;
 }
 
 #headerleft{
@@ -160,6 +162,10 @@ main h2{
     margin-bottom: 60px;
 }
 
+#lastperson{
+    margin-bottom: 0;
+}
+
 .person img{
     box-shadow: none;
     width: 60px;
@@ -171,4 +177,39 @@ main h2{
 
 .who p{
     margin-top: 0;
+    color: #999999;
+}
+
+/*FREEPLAN*/
+
+#freeplan{
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 80px;
+}
+
+ul{
+    background-color:  #f4f4f4;
+    padding: 20px 25px;
+    border-radius: 10px;
+    margin-bottom: 80px;
+}
+
+li{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+li div{
+    color: gray;
+}
+
+li img{
+    max-width: 15px;
+}
+
+#lastlistitem{
+    border-bottom: none;
 }
