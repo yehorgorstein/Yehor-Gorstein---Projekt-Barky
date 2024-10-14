@@ -184,7 +184,23 @@ main h2{
 
 #freeplan{
     border-top: 1px solid rgba(0, 0, 0, 0.1);
-    padding: 80px;
+    padding: 100px;
+}
+
+#freeplandescription{
+    text-align: center;
+    max-width: 560px;
+    margin: 0 auto 70px;
+}
+
+#freeplandescription h2{
+    font-size: 37px;
+    margin: 0;
+}
+
+#freeplandescription p{
+    color: gray;
+    margin: 10px 0 20px;
 }
 
 ul{
@@ -213,3 +229,5 @@ li img{
 #lastlistitem{
     border-bottom: none;
 }
+
+/*INFORMATION*/
