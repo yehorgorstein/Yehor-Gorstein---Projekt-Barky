@@ -7,6 +7,7 @@
 
     --h1: 50px;
     --h2: 37px;
+    --h3: 24px;
 }
 
 @font-face {
@@ -212,7 +213,7 @@ main h2{
 
 #freeplandescription p{
     color: var(--pg);
-    margin: 10px 0 20px;
+    margin: 5px 0 20px;
 }
 
 ul{
@@ -246,8 +247,9 @@ li img{
 
 #information{
     text-align: center;
-    margin: 80px 0 80px;
+    margin: 80px 0;
 }
+
 #information h2{
     font-size: var(--h2);
     margin: 0;
@@ -255,7 +257,10 @@ li img{
 
 #information p{
     color: var(--pg);
-    margin: 5px 0 40px;
+}
+
+#solve{
+    margin: 10px 0 40px;
 }
 
 #categories{
@@ -269,7 +274,8 @@ li img{
 }
 
 #categories h3{
-    margin: 0;
+    margin-top: 0;
+    font-size: var(--h3);
 }
 
 .category{
@@ -279,4 +285,77 @@ li img{
 
 #lastcategory{
     border-right: none;
+}
+
+/*STATISTICS*/
+
+#statistics{
+    border-bottom: 1px solid var(--cl);
+    padding: 50px;
+}
+
+#statistics h2{
+    font-size: var(--h2);
+    text-align: center;
+}
+
+#g2{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    row-gap: 30px;
+}
+
+
+#g2left{
+    grid-column: 1 / span 2;
+}
+
+#g2left h3{
+    margin: 0;
+    font-size: var(--h3);
+}
+
+#g2left p{
+    margin-top: 5px;
+    
+}
+
+#g2right{
+    grid-column: 3 / span 2;
+}
+
+#g2 img{
+    max-width: 450px;
+}
+
+.stats{
+    text-align: center;
+    color: var(--pg);
+
+    border-right: 1px solid var(--cl);
+    justify-content: center;
+}
+
+.stats h1{
+    font-size: var(--h1);
+    margin: 0;
+}
+
+#laststat{
+    border-right: none;
+}
+
+#trybarky{
+    padding-top: 50px;
+    text-align: center;
+}
+
+#trybarky h2{
+    margin: 0;
+}
+
+#trybarky p{
+    margin: 5px 0 25px;
+    color: var(--pg);
 }
