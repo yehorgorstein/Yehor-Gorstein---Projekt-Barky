@@ -29,6 +29,8 @@ a{
     color: var(--bl);
 }
 
+
+
 /*HEADER*/
 
 header{
@@ -60,6 +62,7 @@ header{
 
 #barky{
     width: 110px;
+    height: 23px;
 }
 
 nav{
@@ -88,12 +91,16 @@ nav{
     padding: 7px 15px;
 }
 
+
+
 /*CONTAINER*/
 
 #container{
     max-width: 1000px;
     margin: 0 auto;
 }
+
+
 
 /*START*/
 
@@ -119,6 +126,8 @@ nav{
     max-width: 500px;
 }
 
+
+
 /*COMPANIES*/
 
 #companies{
@@ -134,6 +143,8 @@ nav{
 #companies img{
     max-height: 23px;
 }
+
+
 
 /*MAIN*/
 
@@ -192,6 +203,8 @@ main h2{
     color: var(--pg);
 }
 
+
+
 /*FREEPLAN*/
 
 #freeplan{
@@ -243,11 +256,13 @@ li img{
     border-bottom: none;
 }
 
+
+
 /*INFORMATION*/
 
 #information{
     text-align: center;
-    margin: 80px 0;
+    padding: 80px 0;
 }
 
 #information h2{
@@ -287,12 +302,9 @@ li img{
     border-right: none;
 }
 
-/*STATISTICS*/
 
-#statistics{
-    border-bottom: 1px solid var(--cl);
-    padding: 50px;
-}
+
+/*STATISTICS*/
 
 #statistics h2{
     font-size: var(--h2);
@@ -306,7 +318,6 @@ li img{
     row-gap: 30px;
 }
 
-
 #g2left{
     grid-column: 1 / span 2;
 }
@@ -318,7 +329,10 @@ li img{
 
 #g2left p{
     margin-top: 5px;
-    
+}
+
+#g2left a{
+    text-decoration: underline;
 }
 
 #g2right{
@@ -335,10 +349,15 @@ li img{
 
     border-right: 1px solid var(--cl);
     justify-content: center;
+    padding: 5px;
 }
 
 .stats h1{
     font-size: var(--h1);
+    margin: 0;
+}
+
+.stats p{
     margin: 0;
 }
 
@@ -347,7 +366,7 @@ li img{
 }
 
 #trybarky{
-    padding-top: 50px;
+    padding: 80px 0 100px;
     text-align: center;
 }
 
@@ -358,4 +377,19 @@ li img{
 #trybarky p{
     margin: 5px 0 25px;
     color: var(--pg);
+}
+
+
+
+/*FOOTER*/
+
+footer{
+    margin: 0 auto;
+    max-width: 1200px;
+    border-top: 1px solid var(--cl);
+    padding: 80px 400px;
+}
+
+#media img{
+    height: 20px;
 }
