@@ -4,6 +4,7 @@
     --bl: black;
     --wh: white;
     --li: #f4f4f4;
+    --lb: rgb(128, 214, 243);
 
     --h1: 41px;
     --h2: 37px;
@@ -58,18 +59,39 @@ header{
     align-items: center;
 }
 
-#headerleft img{
-    margin-left: 2px;
-}
-
 #barky{
     width: 110px;
     height: 23px;
 }
 
+#headerright{
+    display: flex;
+}
+
+#headerright a{
+    border-right: 1px solid var(--cl);
+    padding: 1px 20px;
+}
+
+#headerright #login{
+    border-right: none;
+}
+
+#subscription a{
+    border-right: none;
+    border-radius: 5px;
+    color: var(--wh);
+    background-color: var(--bl);
+    padding: 7px 15px;
+}
+
+
+
+
+/*NAVIGATION*/
+
 nav{
     display: flex;
-    gap: 10px;
 }
 
 nav img{
@@ -79,6 +101,7 @@ nav img{
 #navitem{
     padding: 7px 10px;
     border-radius: 5px;
+    position: relative;
 }
 
 #navitem:hover{
@@ -88,19 +111,20 @@ nav img{
 
 .submenu{
     position: absolute;
-    top: 48px;
+    top: 34px;
+    left: 0;
     display: flex;
     flex-direction: column;
 
-    padding: 5px;
+    padding: 5px 3px;
     border-radius: 5px;
-    width: 300px;
+    width: 270px;
 
     background-color: var(--wh);
     z-index: 1000;
     box-shadow: 0 0px 10px 5px var(--cl);
 
-    
+    display: none;
 }
 
 .submenu h4, p{
@@ -139,25 +163,36 @@ nav img{
     display: flex;
 }
 
-#headerright{
-    display: flex;
+#normalsubmenu{
+    width: 150px;
 }
 
-#headerright a{
-    border-right: 1px solid var(--cl);
-    padding: 1px 20px;
+#normalsubmenu a{
+    padding-left: 10px;
 }
 
-#headerright #login{
-    border-right: none;
+#downloadsubmenu{
+    width: 200px;
 }
 
-#subscription a{
-    border-right: none;
-    border-radius: 5px;
-    color: var(--wh);
-    background-color: var(--bl);
-    padding: 7px 15px;
+#downloadlinks a{
+    padding-left: 10px;
+}
+
+#downloadsubmenu p{
+    line-height: 1;
+    padding: 10px;
+}
+
+#yourbrowser{
+    display: inline-block;
+    color: var(--pg);
+    background: none;
+    text-decoration: underline;
+}
+
+#yourbrowser:hover{
+    color: var(--lb);
 }
 
 
