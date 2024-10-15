@@ -8,6 +8,7 @@
     --h1: 50px;
     --h2: 37px;
     --h3: 24px;
+    --fo: 14px;
 }
 
 @font-face {
@@ -229,14 +230,14 @@ main h2{
     margin: 5px 0 20px;
 }
 
-ul{
+#freeplan ul{
     background-color:  var(--li);
     padding: 20px 25px;
     border-radius: 10px;
     margin-bottom: 80px;
 }
 
-li{
+#freeplan li{
     border-bottom: 1px solid var(--cl);
     padding: 10px 0;
 
@@ -244,15 +245,15 @@ li{
     justify-content: space-between;
 }
 
-li div{
+#freeplan li div{
     color: var(--pg);
 }
 
-li img{
+#freeplan img{
     max-width: 15px;
 }
 
-#lastlistitem{
+#freeplan #lastlistitem{
     border-bottom: none;
 }
 
@@ -388,8 +389,40 @@ footer{
     max-width: 1200px;
     border-top: 1px solid var(--cl);
     padding: 80px 400px;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+}
+
+#share{
+    max-width: 300px;
+}
+
+#media{
+    margin: 20px 0 60px;
 }
 
 #media img{
     height: 20px;
+}
+
+#footerlinks{
+    display: flex;
+    gap: 60px;
+}
+
+footer ul{
+    margin: 0;
+}
+
+footer li{
+    color: var(--pg);
+    list-style: none;
+    margin-bottom: 10px;
+    font-size: var(--fo);
+    font-weight: 600;
+}
+
+footer #bold{
+    color: var(--bl);
 }
