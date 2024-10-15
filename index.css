@@ -69,7 +69,74 @@ header{
 
 nav{
     display: flex;
-    gap: 20px;
+    gap: 10px;
+}
+
+nav img{
+    margin-bottom: 2px;
+}
+
+#navitem{
+    padding: 7px 10px;
+    border-radius: 5px;
+}
+
+#navitem:hover{
+    background-color: var(--cl);
+    cursor: pointer;
+}
+
+.submenu{
+    position: absolute;
+    top: 48px;
+    display: flex;
+    flex-direction: column;
+
+    padding: 5px;
+    border-radius: 5px;
+    width: 300px;
+
+    background-color: var(--wh);
+    z-index: 1000;
+    box-shadow: 0 0px 10px 5px var(--cl);
+
+    
+}
+
+.submenu h4, p{
+    margin: 0;
+    font-weight: 500;
+}
+
+.submenu p{
+    font-size: var(--fo);
+    color: var(--pg);
+    font-weight: 400;
+}
+
+.submenu a{
+    padding: 5px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.submenu img{
+    width: 25px;
+    height: 25px;
+    background-color: var(--wh);
+    border: 1px solid var(--cl);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.submenu a:hover{
+    background-color: var(--cl);
+}
+
+#navitem:hover .submenu{
+    display: flex;
 }
 
 #headerright{
