@@ -4,7 +4,8 @@
     --bl: black;
     --wh: white;
     --li: #f4f4f4;
-    --lb: rgb(128, 214, 243);
+    --lb: #087fe7;
+    --su: rgb(39, 36, 36);
 
     --h1: 41px;
     --h2: 37px;
@@ -66,11 +67,13 @@ header{
 
 #headerright{
     display: flex;
+    align-items: center;
 }
 
 #headerright a{
     border-right: 1px solid var(--cl);
-    padding: 1px 20px;
+    padding: 7px 10px;
+    border-radius: 5px;
 }
 
 #headerright #login{
@@ -83,8 +86,16 @@ header{
     color: var(--wh);
     background-color: var(--bl);
     padding: 7px 15px;
+    box-shadow: 0 0px 10px 5px var(--cl);
 }
 
+#headerright a:hover{
+    background-color: var(--cl);
+}
+
+#subscription a:hover{
+    background-color: var(--su);
+}
 
 
 
@@ -98,20 +109,20 @@ nav img{
     margin-bottom: 2px;
 }
 
-#navitem{
+.navitem{
     padding: 7px 10px;
     border-radius: 5px;
     position: relative;
 }
 
-#navitem:hover{
+.navitem:hover{
     background-color: var(--cl);
     cursor: pointer;
 }
 
 .submenu{
     position: absolute;
-    top: 34px;
+    top: 33px;
     left: 0;
     display: flex;
     flex-direction: column;
@@ -159,7 +170,7 @@ nav img{
     background-color: var(--cl);
 }
 
-#navitem:hover .submenu{
+.navitem:hover .submenu{
     display: flex;
 }
 
