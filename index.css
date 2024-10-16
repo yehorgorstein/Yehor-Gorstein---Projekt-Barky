@@ -230,6 +230,10 @@ nav img{
     align-items: center;
 }
 
+#startleft{
+    max-width: 420px;
+}
+
 #start h1{
     font-size: var(--h1);
     margin-bottom: 0;
@@ -238,7 +242,6 @@ nav img{
 #start p{
     color: var(--pg);
     margin: 10px 0 25px 0;
-    max-width: 420px;
 }
 
 #start img{
@@ -274,7 +277,7 @@ main{
 main img{
     max-width: 100%;
     box-shadow: 0 0px 30px 5px var(--cl);
-    margin: 25px 0;
+    margin: 40px 0;
 }
 
 main h2{
@@ -301,7 +304,7 @@ main h2{
     justify-content: center;
     align-items: center;
     gap: 8px;
-    margin-bottom: 60px;
+    margin: 10px 0 100px;
 }
 
 #lastperson{
@@ -311,6 +314,7 @@ main h2{
 .person img{
     box-shadow: none;
     width: 50px;
+    margin: 0;
 }
 
 .who h3{
@@ -331,12 +335,12 @@ main h2{
 #freeplan{
     border-top: 1px solid var(--cl);
     border-bottom: 1px solid var(--cl);
-    padding: 100px 100px 0;
+    padding: 100px 0 0;
 }
 
 #freeplandescription{
     text-align: center;
-    max-width: 560px;
+    max-width: 580px;
     margin: 0 auto 70px;
 }
 
@@ -566,4 +570,73 @@ footer a:hover{
 footer #bold{
     color: var(--bl);
     font-weight: 600;
+}
+
+
+
+
+/*PHONEVIEW*/
+
+#phoneheader{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#hamburger{
+    padding: 5px 10px 2px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+#hamburger img{
+    width: 20px;
+    height: 20px;
+}
+
+#hamburger:hover{
+    background-color: var(--cl);
+    cursor: pointer;
+}
+
+@media (max-width: 600px) {
+    
+    header{
+        display: none;
+    }
+
+    #freeplandescription, #startleft, .quote{
+        max-width: 470px;
+    }
+
+    #start{
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 0;
+    }
+
+    #startleft{
+        text-align: center;
+    }
+
+    main .description, main h2{
+        text-align: center;
+        margin: 0 auto;
+        max-width: 520px;
+    }
+
+    .quote{
+        font-size: var(--h3);
+    }
+
+    #categories{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .category{
+        grid-column: 1 / span 3;
+        border-right: none;
+        padding: 0 0 40px;
+    }
 }
