@@ -12,6 +12,7 @@
     --h3: 24px;
     --fo: 14px;
     --nr: 55px;
+    --pr: 12px;
 }
 
 @font-face {
@@ -71,13 +72,18 @@ header{
 }
 
 #headerright a{
-    border-right: 1px solid var(--cl);
     padding: 7px 10px;
     border-radius: 5px;
 }
 
+#headerright #demo{
+    border-right: 1px solid var(--cl);
+    padding-right: 10px;
+}
+
 #headerright #login{
     border-right: none;
+    padding: 0 10px;
 }
 
 #subscription a{
@@ -86,7 +92,7 @@ header{
     color: var(--wh);
     background-color: var(--bl);
     padding: 7px 15px;
-    box-shadow: 0 0px 10px 5px var(--cl);
+    box-shadow: 0 0px 5px 2px var(--cl);
 }
 
 #headerright a:hover{
@@ -178,7 +184,7 @@ nav img{
     width: 150px;
 }
 
-#normalsubmenu a{
+#normalsubmenu a, #downloadlinks a{
     padding-left: 10px;
 }
 
@@ -186,23 +192,19 @@ nav img{
     width: 200px;
 }
 
-#downloadlinks a{
-    padding-left: 10px;
-}
-
 #downloadsubmenu p{
     line-height: 1;
     padding: 10px;
 }
 
-#yourbrowser{
+#bluelink{
     display: inline-block;
     color: var(--pg);
     background: none;
     text-decoration: underline;
 }
 
-#yourbrowser:hover{
+#bluelink:hover{
     color: var(--lb);
 }
 
@@ -236,7 +238,7 @@ nav img{
 #start p{
     color: var(--pg);
     margin: 10px 0 25px 0;
-    max-width: 400px;
+    max-width: 420px;
 }
 
 #start img{
@@ -308,16 +310,18 @@ main h2{
 
 .person img{
     box-shadow: none;
-    width: 60px;
+    width: 50px;
 }
 
 .who h3{
     margin-bottom: 0;
+    font-size: var(--fo);
 }
 
 .who p{
-    margin-top: 0;
+    margin: 0 0 10px;
     color: var(--pg);
+    font-size: var(--pr)
 }
 
 
@@ -391,6 +395,7 @@ main h2{
 
 #information p{
     color: var(--pg);
+    padding-bottom: 10px;
 }
 
 #solve{
@@ -403,7 +408,7 @@ main h2{
 }
 
 #categories a{
-    text-decoration: underline;
+    color: var(--bl);
     text-shadow: 1px 1px 1px var(--cl);
 }
 
@@ -503,14 +508,17 @@ main h2{
 
 /*FOOTER*/
 
-footer{
-    margin: 0 auto;
-    max-width: 1200px;
+#footerbox{
     border-top: 1px solid var(--cl);
-    padding: 80px 400px;
+}
+
+footer{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px 0;
     display: flex;
-    align-items: start;
-    justify-content: center;
+    flex-grow: 1;
+    justify-content: space-between;
 }
 
 #share{
@@ -520,31 +528,39 @@ footer{
 
 #media{
     margin: 20px 0 60px;
+    max-width: 160px;
+    display: flex;
+    justify-content: space-between;
 }
 
-#barkyfooter img{
-    max-height: 32px;
+#barkyfooter{
+    max-width: 150px;
 }
 
 #media img{
     height: 23px;
-    margin-left: 5px;
 }
 
-#footerlinks{
-    display: flex;
-    gap: 60px;
+#personalinformation{
+    margin-bottom: 20px;
 }
 
 footer ul{
+    list-style: none;
     margin: 0;
     font-size: var(--fo);
 }
 
 footer li{
-    color: var(--pg);
-    list-style: none;
     margin-bottom: 10px;
+}
+
+footer a{
+    color: var(--pg);
+}
+
+footer a:hover{
+    text-decoration: underline;
 }
 
 footer #bold{
