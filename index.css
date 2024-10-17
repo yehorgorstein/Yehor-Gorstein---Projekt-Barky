@@ -602,7 +602,30 @@ footer #bold{
     gap: 5px;
 }
 
+@media (max-width: 1080px){
+    footer{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        row-gap: 25px;
+        padding-left: 20px;
+    }
+
+    #share{
+        grid-column: 1 /span 2;
+        max-width: none;
+    }
+
+    footer ul{
+        padding: 0;
+    }
+
+    #media{
+        margin: 30px 0;
+    }
+}
+
 @media (min-width: 601px) and (max-width: 1080px){
+    
     header{
         display: none;
     }
@@ -611,6 +634,7 @@ footer #bold{
         display: flex;
         justify-content: space-between;
         align-items: center;
+        
     }
 
     #start{
@@ -628,7 +652,39 @@ footer #bold{
         max-width: 540px;
         margin: 20px auto;
     }
+
+    #categories{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 50px;
+    }
+
+    .category{
+        border-right: none;
+    }
+
+    .stats{
+        border-right: none;
+    }
+
+    #firststat{
+        grid-column: 1 / span 2;
+    }
+
+    #secondstat{
+        grid-column: 3 / span 2;
+    }
+
+    #thirdstat{
+        grid-column: 1 / span 2;
+    }
+
+    #laststat{
+        grid-column: 3 / span 2;
+    }
+    
 }
+
 
 
 
@@ -670,6 +726,10 @@ footer #bold{
 
     #freeplandescription, #startleft, .quote{
         max-width: 470px;
+    }
+
+    #container{
+        margin: 0 20px;
     }
 
     #start{
@@ -714,25 +774,6 @@ footer #bold{
 
     .stats{
         border-right: none;
-    }
-
-    footer{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        row-gap: 25px;
-    }
-
-    #share{
-        grid-column: 1 /span 2;
-        max-width: none;
-    }
-
-    footer ul{
-        padding: 0;
-    }
-
-    #media{
-        margin: 30px 0;
     }
 
 }
