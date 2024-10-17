@@ -583,8 +583,7 @@ footer #bold{
 
 #phoneheader{
     margin-top: 20px;
-    display: flex;
-    justify-content: space-between;
+    display: none;
 }
 
 #hamburger{
@@ -607,6 +606,11 @@ footer #bold{
     
     header{
         display: none;
+    }
+
+    #phoneheader{
+        display: flex;
+        justify-content: space-between;
     }
 
     #freeplandescription, #startleft, .quote{
