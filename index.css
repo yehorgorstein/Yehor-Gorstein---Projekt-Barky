@@ -750,10 +750,6 @@ footer #bold{
         max-width: 470px;
     }
 
-    #container{
-        margin: 0 20px;
-    }
-
     #start{
         display: flex;
         flex-direction: column-reverse;
