@@ -521,11 +521,11 @@ main h2{
 
 
 
+
 /*FOOTER*/
 
 #footerbox{
     border-top: 1px solid var(--cl);
-    overflow: hidden;
 }
 
 footer{
