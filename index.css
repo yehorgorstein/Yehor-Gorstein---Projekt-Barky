@@ -24,6 +24,7 @@
 
 body{
     font-family: inter;
+    margin: auto 20px;
 }
 
 p{
@@ -215,6 +216,7 @@ nav img{
 /*CONTAINER*/
 
 #container{
+    max-width: 100%;
     max-width: 1000px;
     margin: 0 auto;
 }
@@ -451,6 +453,8 @@ main h2{
 
 #g2left{
     grid-column: 1 / span 2;
+    display: grid;
+    justify-content: center;
 }
 
 #g2left h3{
@@ -469,6 +473,10 @@ main h2{
 
 #g2right{
     grid-column: 3 / span 2;
+    display: grid;
+    justify-content: center;
+    max-width: 450px;
+    overflow: hidden;
 }
 
 #g2 img{
@@ -517,6 +525,7 @@ main h2{
 
 #footerbox{
     border-top: 1px solid var(--cl);
+    overflow: hidden;
 }
 
 footer{
@@ -594,6 +603,8 @@ footer #bold{
     top: 0;
     left: 0;
     right: 0;
+
+    overflow: hidden;
 }
 
 #ipadheaderright{
@@ -603,6 +614,7 @@ footer #bold{
 }
 
 @media (max-width: 1080px){
+
     footer{
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -625,7 +637,8 @@ footer #bold{
 }
 
 @media (min-width: 601px) and (max-width: 1080px){
-    
+
+
     header{
         display: none;
     }
@@ -634,7 +647,7 @@ footer #bold{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        
+        overflow: visible;
     }
 
     #start{
@@ -653,6 +666,10 @@ footer #bold{
         margin: 20px auto;
     }
 
+    img #g2right{
+        max-width: 200px;
+    }
+
     #categories{
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -662,6 +679,7 @@ footer #bold{
     .category{
         border-right: none;
     }
+
 
     .stats{
         border-right: none;
@@ -681,6 +699,10 @@ footer #bold{
 
     #laststat{
         grid-column: 3 / span 2;
+    }
+
+    #media{
+        padding-bottom: 50px;
     }
     
 }
